@@ -1,12 +1,14 @@
-import React from 'react'
+import { HashRouter, Routes, Route } from "react-router-dom";
+import CatalogPage from "./features/catalog/CatalogPage";
+import ProductDetail from "./pages/ProductDetail";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>Proyecto 1 - E-commerce B2C</h1>
-      <p>Aplicación en desarrollo...</p>
-    </div>
-  )
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<CatalogPage />} />
+        <Route path="/producto/:id" element={<ProductDetail />} />
+      </Routes>
+    </HashRouter>
+  );
 }
-
-export default App
