@@ -1,0 +1,2700 @@
+{
+  "products": [
+    {
+      "objectID": "prod-0001",
+      "id": "prod-0001",
+      "name": "AMD Ryzen 3 4100",
+      "description": "AMD Ryzen 3 4100 de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 526999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 3 4100",
+      "sku": "AMD-RYZEN-3-4100-0001",
+      "stock": 60,
+      "rating": 3.9,
+      "reviews": 244,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "4"
+        },
+        {
+          "label": "Hilos",
+          "value": "8"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.8 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://digitallifecr.com/cdn/shop/files/46_a2cfa658-db5d-4785-b3ee-e4d1e90b3365.png?v=1709832427&width=1200",
+        "https://digitallifecr.com/cdn/shop/files/47_ebc5eae7-33d4-499a-83d8-5820219a7797.png?v=1709832427&width=1200"
+      ],
+      "b2b_info": {
+        "wholesale_price": 463999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 19,
+        "heredia": 14,
+        "cartago": 22,
+        "liberia": 5
+      },
+      "features": [
+        "PCIe 5.0",
+        "Soporte DDR5",
+        "Bajo consumo"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0002",
+      "id": "prod-0002",
+      "name": "Intel Core i7-13700K",
+      "description": "Intel Core i7-13700K de la categoría Procesadores. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 115999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i7-13700K",
+      "sku": "INT-CORE-I7-13700K-0002",
+      "stock": 2,
+      "rating": 4.4,
+      "reviews": 221,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "16"
+        },
+        {
+          "label": "Hilos",
+          "value": "24"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.4 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.4 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://digitallifecr.com/cdn/shop/files/30.png?v=1698102562&width=1200",
+        "https://tpucdn.com/cpu-specs/images/chips/2850-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 101999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 0,
+        "heredia": 1,
+        "cartago": 0,
+        "liberia": 1
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0003",
+      "id": "prod-0003",
+      "name": "AMD Ryzen 7 5800X",
+      "description": "AMD Ryzen 7 5800X de la categoría Procesadores. Ideal para profesionales y entusiastas de la tecnología.",
+      "price": 134999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 7 5800X",
+      "sku": "AMD-RYZEN-7-5800X-0003",
+      "stock": 59,
+      "rating": 3.8,
+      "reviews": 282,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "8"
+        },
+        {
+          "label": "Hilos",
+          "value": "16"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.8 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.7 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "105W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZDk2ZWFmNT-1000x1000.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_844415-MLA99446576386_112025-F.webp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 118999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 11,
+        "heredia": 16,
+        "cartago": 17,
+        "liberia": 15
+      },
+      "features": [
+        "Soporte DDR5",
+        "Overclock desbloqueado",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0004",
+      "id": "prod-0004",
+      "name": "Intel Core i7-14700K",
+      "description": "Intel Core i7-14700K de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 119999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i7-14700K",
+      "sku": "INT-CORE-I7-14700K-0004",
+      "stock": 34,
+      "rating": 4.2,
+      "reviews": 82,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "20"
+        },
+        {
+          "label": "Hilos",
+          "value": "28"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.4 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.6 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/OTY4Nzg3OT-1000x1000.png",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/OTY4Nzg3OT_2-1000x1000.png"
+      ],
+      "b2b_info": {
+        "wholesale_price": 105999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 10,
+        "heredia": 11,
+        "cartago": 9,
+        "liberia": 4
+      },
+      "features": [
+        "PCIe 5.0",
+        "Soporte DDR5",
+        "Gráficos integrados"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0005",
+      "id": "prod-0005",
+      "name": "AMD Ryzen 9 7950X3D",
+      "description": "AMD Ryzen 9 7950X3D de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 555999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 9 7950X3D",
+      "sku": "AMD-RYZEN-9-7950X3D-0005",
+      "stock": 22,
+      "rating": 4,
+      "reviews": 21,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "16"
+        },
+        {
+          "label": "Hilos",
+          "value": "32"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "4.2 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.7 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "TDP",
+          "value": "120W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "5nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZDM4NjgzZj-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZDM4NjgzZj_2-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 488999,
+        "minimum_order": 10,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 6,
+        "heredia": 4,
+        "cartago": 5,
+        "liberia": 7
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0006",
+      "id": "prod-0006",
+      "name": "AMD Ryzen 5 7600",
+      "description": "AMD Ryzen 5 7600 de la categoría Procesadores. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 319999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 5 7600",
+      "sku": "AMD-RYZEN-5-7600-0006",
+      "stock": 5,
+      "rating": 4,
+      "reviews": 289,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.8 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.1 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "5nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MTlhMGIyNj-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MTlhMGIyNj_1-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 281999,
+        "minimum_order": 5,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 2,
+        "heredia": 2,
+        "cartago": 1,
+        "liberia": 0
+      },
+      "features": [
+        "Gráficos integrados",
+        "PCIe 5.0",
+        "Soporte DDR5"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0007",
+      "id": "prod-0007",
+      "name": "Intel Core i5-12400F",
+      "description": "Intel Core i5-12400F de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 307999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i5-12400F",
+      "sku": "INT-CORE-I5-12400F-0007",
+      "stock": 45,
+      "rating": 4.1,
+      "reviews": 213,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "2.5 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.4 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MTBiYmZiMD-1000x1000.jpg",
+        "https://cdn.raiq.dev/4ELYKLTmFo.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 270999,
+        "minimum_order": 5,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 15,
+        "heredia": 5,
+        "cartago": 10,
+        "liberia": 15
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "Bajo consumo"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0008",
+      "id": "prod-0008",
+      "name": "AMD Ryzen 9 5950X",
+      "description": "AMD Ryzen 9 5950X de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 618999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 9 5950X",
+      "sku": "AMD-RYZEN-9-5950X-0008",
+      "stock": 60,
+      "rating": 4.1,
+      "reviews": 330,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "16"
+        },
+        {
+          "label": "Hilos",
+          "value": "32"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.4 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.9 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "105W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MDUwZDEyYT-1000x1000.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MDUwZDEyYT_4.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 544999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 1,
+        "heredia": 35,
+        "cartago": 9,
+        "liberia": 15
+      },
+      "features": [
+        "Bajo consumo",
+        "Gráficos integrados",
+        "PCIe 5.0"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0009",
+      "id": "prod-0009",
+      "name": "AMD Ryzen 5 5600X",
+      "description": "AMD Ryzen 5 5600X de la categoría Procesadores. Ideal para profesionales y entusiastas de la tecnología.",
+      "price": 585999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 5 5600X",
+      "sku": "AMD-RYZEN-5-5600X-0009",
+      "stock": 38,
+      "rating": 4.6,
+      "reviews": 221,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.7 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.6 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NmUzMTIwZG-1000x1000.jpg",
+        "https://www.coolmod.com/images/product/large/amd-ryzen-5-5600x-46ghz-socket-am4-tray-procesador-001.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 515999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 12,
+        "heredia": 13,
+        "cartago": 11,
+        "liberia": 2
+      },
+      "features": [
+        "Gráficos integrados",
+        "Overclock desbloqueado",
+        "PCIe 5.0"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0010",
+      "id": "prod-0010",
+      "name": "AMD Ryzen 7 7800X3D",
+      "description": "AMD Ryzen 7 7800X3D de la categoría Procesadores. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 131999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 7 7800X3D",
+      "sku": "AMD-RYZEN-7-7800X3D-0010",
+      "stock": 6,
+      "rating": 4.2,
+      "reviews": 215,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "8"
+        },
+        {
+          "label": "Hilos",
+          "value": "16"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "4.2 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "TDP",
+          "value": "120W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "5nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NWZiNWMxZj-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MGJjN2ZiMD-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 115999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 1,
+        "heredia": 2,
+        "cartago": 2,
+        "liberia": 1
+      },
+      "features": [
+        "Gráficos integrados",
+        "Bajo consumo",
+        "Overclock desbloqueado"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0011",
+      "id": "prod-0011",
+      "name": "AMD Ryzen 5 4500",
+      "description": "AMD Ryzen 5 4500 de la categoría Procesadores. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 622999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 5 4500",
+      "sku": "AMD-RYZEN-5-4500-0011",
+      "stock": 15,
+      "rating": 3.9,
+      "reviews": 263,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.6 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.1 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZTVlMWQ2N2-1000x1000.jpg",
+        "https://www.primeabgb.com/wp-content/uploads/2025/08/100-100000644.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 547999,
+        "minimum_order": 20,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 5,
+        "heredia": 5,
+        "cartago": 4,
+        "liberia": 1
+      },
+      "features": [
+        "Soporte DDR5",
+        "Overclock desbloqueado",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0012",
+      "id": "prod-0012",
+      "name": "AMD Ryzen 7 7700",
+      "description": "AMD Ryzen 7 7700 de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 523999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 7 7700",
+      "sku": "AMD-RYZEN-7-7700-0012",
+      "stock": 15,
+      "rating": 4.5,
+      "reviews": 3,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "8"
+        },
+        {
+          "label": "Hilos",
+          "value": "16"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.8 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.3 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "5nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZWY2Nzc4YT-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/OWFiZDBkZW_2-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 460999,
+        "minimum_order": 5,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 0,
+        "heredia": 3,
+        "cartago": 3,
+        "liberia": 9
+      },
+      "features": [
+        "Bajo consumo",
+        "Overclock desbloqueado",
+        "Gráficos integrados"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0013",
+      "id": "prod-0013",
+      "name": "Intel Core i9-14900K",
+      "description": "Intel Core i9-14900K de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 570999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i9-14900K",
+      "sku": "INT-CORE-I9-14900K-0013",
+      "stock": 21,
+      "rating": 3.9,
+      "reviews": 148,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "24"
+        },
+        {
+          "label": "Hilos",
+          "value": "32"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.2 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "6 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NzE4OGE0Y2_1-1000x1000.png",
+        "https://tpucdn.com/cpu-specs/images/chips/3269-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 501999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 6,
+        "heredia": 9,
+        "cartago": 4,
+        "liberia": 2
+      },
+      "features": [
+        "PCIe 5.0",
+        "Soporte DDR5",
+        "Gráficos integrados"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0014",
+      "id": "prod-0014",
+      "name": "AMD Ryzen 9 5900X",
+      "description": "AMD Ryzen 9 5900X de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 248999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 9 5900X",
+      "sku": "AMD-RYZEN-9-5900X-0014",
+      "stock": 7,
+      "rating": 4.3,
+      "reviews": 247,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "12"
+        },
+        {
+          "label": "Hilos",
+          "value": "24"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.7 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.8 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "105W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/YWRhNTVkND-1000x1000.jpg",
+        "https://i.ebayimg.com/images/g/e~MAAOSwJNlmJgSj/s-l1600.webp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 218999,
+        "minimum_order": 10,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 2,
+        "heredia": 2,
+        "cartago": 3,
+        "liberia": 0
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Gráficos integrados",
+        "Bajo consumo"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0015",
+      "id": "prod-0015",
+      "name": "Intel Core i5-13600K",
+      "description": "Intel Core i5-13600K de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 211999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i5-13600K",
+      "sku": "INT-CORE-I5-13600K-0015",
+      "stock": 44,
+      "rating": 5,
+      "reviews": 200,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "14"
+        },
+        {
+          "label": "Hilos",
+          "value": "20"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.5 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.1 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MTMyOGQ1Y2-1000x1000.jpg",
+        "https://tpucdn.com/cpu-specs/images/chips/2829-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 186999,
+        "minimum_order": 10,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 19,
+        "heredia": 12,
+        "cartago": 2,
+        "liberia": 11
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "Bajo consumo"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0016",
+      "id": "prod-0016",
+      "name": "AMD Ryzen 9 7900X",
+      "description": "AMD Ryzen 9 7900X de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 360999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 9 7900X",
+      "sku": "AMD-RYZEN-9-7900X-0016",
+      "stock": 31,
+      "rating": 4.7,
+      "reviews": 235,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "12"
+        },
+        {
+          "label": "Hilos",
+          "value": "24"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "4.7 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.6 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "TDP",
+          "value": "170W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "5nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/YzBmYTIzN2-1000x1000.jpg",
+        "https://i.ebayimg.com/images/g/9RYAAeSwAnFp1mJv/s-l1600.webp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 317999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 8,
+        "heredia": 7,
+        "cartago": 9,
+        "liberia": 7
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "PCIe 5.0"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0017",
+      "id": "prod-0017",
+      "name": "AMD Ryzen 7 5800X3D",
+      "description": "AMD Ryzen 7 5800X3D de la categoría Procesadores. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 235999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 7 5800X3D",
+      "sku": "AMD-RYZEN-7-5800X3D-0017",
+      "stock": 14,
+      "rating": 4,
+      "reviews": 327,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "8"
+        },
+        {
+          "label": "Hilos",
+          "value": "16"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.4 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.5 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "105W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/N2UxMmE4ZW.jpg",
+        "https://tpucdn.com/cpu-specs/images/chips/2532-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 207999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 4,
+        "heredia": 4,
+        "cartago": 3,
+        "liberia": 3
+      },
+      "features": [
+        "Bajo consumo",
+        "Overclock desbloqueado",
+        "Gráficos integrados"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0018",
+      "id": "prod-0018",
+      "name": "Intel Core i5-14600K",
+      "description": "Intel Core i5-14600K de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 605999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i5-14600K",
+      "sku": "INT-CORE-I5-14600K-0018",
+      "stock": 43,
+      "rating": 4.4,
+      "reviews": 292,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "14"
+        },
+        {
+          "label": "Hilos",
+          "value": "20"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.5 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.3 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MTY3OWEwMW-1000x1000.jpg",
+        "https://tpucdn.com/cpu-specs/images/chips/3266-front.jpgs"
+      ],
+      "b2b_info": {
+        "wholesale_price": 532999,
+        "minimum_order": 5,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 27,
+        "heredia": 15,
+        "cartago": 0,
+        "liberia": 1
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Bajo consumo",
+        "Soporte DDR5"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0019",
+      "id": "prod-0019",
+      "name": "AMD Ryzen 7 5700X",
+      "description": "AMD Ryzen 7 5700X de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 320999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 7 5700X",
+      "sku": "AMD-RYZEN-7-5700X-0019",
+      "stock": 42,
+      "rating": 3.7,
+      "reviews": 144,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "8"
+        },
+        {
+          "label": "Hilos",
+          "value": "16"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.4 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.6 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MWQ3YzQzNT-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MWQ3YzQzNT_3-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 281999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 5,
+        "heredia": 11,
+        "cartago": 13,
+        "liberia": 13
+      },
+      "features": [
+        "PCIe 5.0",
+        "Soporte DDR5",
+        "Overclock desbloqueado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0020",
+      "id": "prod-0020",
+      "name": "AMD Ryzen 5 5500",
+      "description": "AMD Ryzen 5 5500 de la categoría Procesadores. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 457999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 5 5500",
+      "sku": "AMD-RYZEN-5-5500-0020",
+      "stock": 36,
+      "rating": 4.3,
+      "reviews": 149,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.6 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.2 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NGNjNzJiYW-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NGNjNzJiYW_5-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 402999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 9,
+        "heredia": 10,
+        "cartago": 8,
+        "liberia": 9
+      },
+      "features": [
+        "Gráficos integrados",
+        "Soporte DDR5",
+        "Overclock desbloqueado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0021",
+      "id": "prod-0021",
+      "name": "Intel Core i3-12100F",
+      "description": "Intel Core i3-12100F de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 188999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i3-12100F",
+      "sku": "INT-CORE-I3-12100F-0021",
+      "stock": 36,
+      "rating": 3.8,
+      "reviews": 140,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "4"
+        },
+        {
+          "label": "Hilos",
+          "value": "8"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.3 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.3 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "58W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MDcxYzM2M2-1000x1000.png",
+        "https://example.com/images/intel-core-i3-12100f-2.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 165999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 12,
+        "heredia": 6,
+        "cartago": 15,
+        "liberia": 3
+      },
+      "features": [
+        "Gráficos integrados",
+        "Soporte DDR5",
+        "Bajo consumo"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0022",
+      "id": "prod-0022",
+      "name": "AMD Ryzen 5 5600",
+      "description": "AMD Ryzen 5 5600 de la categoría Procesadores. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 449999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "AMD",
+      "model": "Ryzen 5 5600",
+      "sku": "AMD-RYZEN-5-5600-0022",
+      "stock": 8,
+      "rating": 3.6,
+      "reviews": 309,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "6"
+        },
+        {
+          "label": "Hilos",
+          "value": "12"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.5 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "4.4 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "TDP",
+          "value": "65W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "7nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZWYyYmI0OW-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZWYyYmI0OW_3-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 395999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 2,
+        "heredia": 3,
+        "cartago": 2,
+        "liberia": 1
+      },
+      "features": [
+        "Gráficos integrados",
+        "Soporte DDR5",
+        "Overclock desbloqueado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0023",
+      "id": "prod-0023",
+      "name": "Intel Core i9-13900K",
+      "description": "Intel Core i9-13900K de la categoría Procesadores. Combina rendimiento confiable con un precio competitivo.",
+      "price": 539999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i9-13900K",
+      "sku": "INT-CORE-I9-13900K-0023",
+      "stock": 14,
+      "rating": 4.6,
+      "reviews": 89,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "24"
+        },
+        {
+          "label": "Hilos",
+          "value": "32"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5.8 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MDM1ODAzMj-1000x1000.jpg",
+        "https://tpucdn.com/cpu-specs/images/chips/2817-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 474999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 2,
+        "heredia": 2,
+        "cartago": 5,
+        "liberia": 5
+      },
+      "features": [
+        "PCIe 5.0",
+        "Gráficos integrados",
+        "Soporte DDR5"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0024",
+      "id": "prod-0024",
+      "name": "Intel Core i7-12700K",
+      "description": "Intel Core i7-12700K de la categoría Procesadores. Pensado para setups exigentes con estética moderna.",
+      "price": 308999,
+      "currency": "CRC",
+      "category": "Procesadores",
+      "brand": "Intel",
+      "model": "Core i7-12700K",
+      "sku": "INT-CORE-I7-12700K-0024",
+      "stock": 13,
+      "rating": 4,
+      "reviews": 38,
+      "specifications": [
+        {
+          "label": "Núcleos",
+          "value": "12"
+        },
+        {
+          "label": "Hilos",
+          "value": "20"
+        },
+        {
+          "label": "Frecuencia base",
+          "value": "3.6 GHz"
+        },
+        {
+          "label": "Frecuencia turbo",
+          "value": "5 GHz"
+        },
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "TDP",
+          "value": "125W"
+        },
+        {
+          "label": "Proceso de fabricación",
+          "value": "10nm"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MjA2ZDBhYj.jpg",
+        "https://tpucdn.com/cpu-specs/images/chips/2507-front.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 271999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 3,
+        "heredia": 6,
+        "cartago": 3,
+        "liberia": 1
+      },
+      "features": [
+        "Overclock desbloqueado",
+        "Soporte DDR5",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0025",
+      "id": "prod-0025",
+      "name": "ASUS TUF Gaming B760M-Plus WiFi",
+      "description": "ASUS TUF Gaming B760M-Plus WiFi de la categoría Tarjetas Madre. Ideal para profesionales y entusiastas de la tecnología.",
+      "price": 266999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "TUF Gaming B760M-Plus WiFi",
+      "sku": "ASU-TUF-GAMING-B760M-PLUS-WIFI-0025",
+      "stock": 37,
+      "rating": 4.3,
+      "reviews": 181,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "B760"
+        },
+        {
+          "label": "Formato",
+          "value": "Mini-ITX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "3"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MWI0OTQ4MW.jpg",
+        "https://dlcdnwebimgs.asus.com/gain/002bcc04-5cc3-4f9a-aa25-cba707148477/w300/fwebp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 234999,
+        "minimum_order": 5,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 12,
+        "heredia": 6,
+        "cartago": 10,
+        "liberia": 9
+      },
+      "features": [
+        "M.2 x4",
+        "RGB Header",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0026",
+      "id": "prod-0026",
+      "name": "ASRock B550M-HDV",
+      "description": "ASRock B550M-HDV de la categoría Tarjetas Madre. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 187999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASRock",
+      "model": "B550M-HDV",
+      "sku": "ASR-B550M-HDV-0026",
+      "stock": 18,
+      "rating": 4.5,
+      "reviews": 77,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM4"
+        },
+        {
+          "label": "Chipset",
+          "value": "B550"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZWVlNzE1NG-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/ZWVlNzE1NG_1-250x250.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 164999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 5,
+        "heredia": 11,
+        "cartago": 2,
+        "liberia": 0
+      },
+      "features": [
+        "PCIe 5.0",
+        "RGB Header",
+        "BIOS Flashback"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0027",
+      "id": "prod-0027",
+      "name": "ASUS TUF Gaming Z790-Plus",
+      "description": "ASUS TUF Gaming Z790-Plus de la categoría Tarjetas Madre. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 288999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "TUF Gaming Z790-Plus",
+      "sku": "ASU-TUF-GAMING-Z790-PLUS-0027",
+      "stock": 26,
+      "rating": 3.8,
+      "reviews": 271,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://dlcdnwebimgs.asus.com/gain/87e78585-a83e-40e1-bfa7-48347c979543/w692",
+        "https://dlcdnwebimgs.asus.com/gain/391f8852-89ee-4429-bf08-48b3be125099/w300/fwebp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 253999,
+        "minimum_order": 10,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 1,
+        "heredia": 11,
+        "cartago": 1,
+        "liberia": 13
+      },
+      "features": [
+        "RGB Header",
+        "M.2 x4",
+        "PCIe 5.0"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0028",
+      "id": "prod-0028",
+      "name": "ASUS Prime Z790-P",
+      "description": "ASUS Prime Z790-P de la categoría Tarjetas Madre. Ideal para profesionales y entusiastas de la tecnología.",
+      "price": 263999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "Prime Z790-P",
+      "sku": "ASU-PRIME-Z790-P-0028",
+      "stock": 34,
+      "rating": 3.9,
+      "reviews": 317,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "3"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NTA2MWFmZG-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NTA2MWFmZG_6-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 231999,
+        "minimum_order": 20,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 12,
+        "heredia": 13,
+        "cartago": 7,
+        "liberia": 2
+      },
+      "features": [
+        "M.2 x4",
+        "RGB Header",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0029",
+      "id": "prod-0029",
+      "name": "Gigabyte B650 AORUS Elite AX",
+      "description": "Gigabyte B650 AORUS Elite AX de la categoría Tarjetas Madre. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 103999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "Gigabyte",
+      "model": "B650 AORUS Elite AX",
+      "sku": "GIG-B650-AORUS-ELITE-AX-0029",
+      "stock": 57,
+      "rating": 4.7,
+      "reviews": 143,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/OWU0ZmYyNm.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/OWU0ZmYyNm_1.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 91999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 16,
+        "heredia": 8,
+        "cartago": 20,
+        "liberia": 13
+      },
+      "features": [
+        "BIOS Flashback",
+        "WiFi 6E integrado",
+        "PCIe 5.0"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0030",
+      "id": "prod-0030",
+      "name": "MSI PRO B650M-A WiFi",
+      "description": "MSI PRO B650M-A WiFi de la categoría Tarjetas Madre. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 373999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "MSI",
+      "model": "PRO B650M-A WiFi",
+      "sku": "MSI-PRO-B650M-A-WIFI-0030",
+      "stock": 38,
+      "rating": 3.7,
+      "reviews": 293,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "128GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/YmZiMjBjOG-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/YmZiMjBjOG_1-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 328999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 9,
+        "heredia": 12,
+        "cartago": 3,
+        "liberia": 14
+      },
+      "features": [
+        "RGB Header",
+        "BIOS Flashback",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0031",
+      "id": "prod-0031",
+      "name": "ASUS ROG Strix Z790-E Gaming",
+      "description": "ASUS ROG Strix Z790-E Gaming de la categoría Tarjetas Madre. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 76999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "ROG Strix Z790-E Gaming",
+      "sku": "ASU-ROG-STRIX-Z790-E-GAMING-0031",
+      "stock": 7,
+      "rating": 4,
+      "reviews": 199,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MzNjM2E2Yz-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/MzNjM2E2Yz_6-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 67999,
+        "minimum_order": 20,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 1,
+        "heredia": 2,
+        "cartago": 2,
+        "liberia": 2
+      },
+      "features": [
+        "WiFi 6E integrado",
+        "RGB Header",
+        "M.2 x4"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0032",
+      "id": "prod-0032",
+      "name": "ASRock Z790 Steel Legend WiFi",
+      "description": "ASRock Z790 Steel Legend WiFi de la categoría Tarjetas Madre. Pensado para setups exigentes con estética moderna.",
+      "price": 246999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASRock",
+      "model": "Z790 Steel Legend WiFi",
+      "sku": "ASR-Z790-STEEL-LEGEND-WIFI-0032",
+      "stock": 40,
+      "rating": 4.7,
+      "reviews": 257,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "3"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/B0BJF1RS19-1000x1000.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/B0BJF1RS19_1-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 216999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 22,
+        "heredia": 4,
+        "cartago": 0,
+        "liberia": 14
+      },
+      "features": [
+        "M.2 x4",
+        "PCIe 5.0",
+        "RGB Header"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0033",
+      "id": "prod-0033",
+      "name": "ASUS Prime B650M-A",
+      "description": "ASUS Prime B650M-A de la categoría Tarjetas Madre. Pensado para setups exigentes con estética moderna.",
+      "price": 269999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "Prime B650M-A",
+      "sku": "ASU-PRIME-B650M-A-0033",
+      "stock": 52,
+      "rating": 3.6,
+      "reviews": 205,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "128GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://compucomponentescr.com/6392-large_default/tarjeta-madre-asus-prime-b650m-a-ii-csm.jpg",
+        "https://s.pacn.ws/1/p/1az/asus-prime-b650ma-wifi-ii-845687.1.webp?v=spsz8z&width=2400"
+      ],
+      "b2b_info": {
+        "wholesale_price": 237999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 14,
+        "heredia": 10,
+        "cartago": 13,
+        "liberia": 15
+      },
+      "features": [
+        "WiFi 6E integrado",
+        "PCIe 5.0",
+        "BIOS Flashback"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0034",
+      "id": "prod-0034",
+      "name": "ASRock B650M Pro RS",
+      "description": "ASRock B650M Pro RS de la categoría Tarjetas Madre. Combina rendimiento confiable con un precio competitivo.",
+      "price": 76999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASRock",
+      "model": "B650M Pro RS",
+      "sku": "ASR-B650M-PRO-RS-0034",
+      "stock": 60,
+      "rating": 4.4,
+      "reviews": 138,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://m.media-amazon.com/images/I/81eE27pAJnL._AC_SL1500_.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/NDM3M2ExMm.jpeg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 67999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 6,
+        "heredia": 10,
+        "cartago": 39,
+        "liberia": 5
+      },
+      "features": [
+        "BIOS Flashback",
+        "RGB Header",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0035",
+      "id": "prod-0035",
+      "name": "MSI PRO Z790-P WiFi",
+      "description": "MSI PRO Z790-P WiFi de la categoría Tarjetas Madre. Diseñado para uso intensivo y gaming de alto rendimiento.",
+      "price": 278999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "MSI",
+      "model": "PRO Z790-P WiFi",
+      "sku": "MSI-PRO-Z790-P-WIFI-0035",
+      "stock": 20,
+      "rating": 3.6,
+      "reviews": 76,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://cdn.pacifiko.com/image/cache/catalog/p/M2MyMDg0OT-1000x1000.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/M2MyMDg0OT_1.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 245999,
+        "minimum_order": 5,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 1,
+        "heredia": 7,
+        "cartago": 8,
+        "liberia": 4
+      },
+      "features": [
+        "WiFi 6E integrado",
+        "RGB Header",
+        "BIOS Flashback"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0036",
+      "id": "prod-0036",
+      "name": "Gigabyte B760M DS3H AX",
+      "description": "Gigabyte B760M DS3H AX de la categoría Tarjetas Madre. Pensado para setups exigentes con estética moderna.",
+      "price": 287999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "Gigabyte",
+      "model": "B760M DS3H AX",
+      "sku": "GIG-B760M-DS3H-AX-0036",
+      "stock": 59,
+      "rating": 4.9,
+      "reviews": 223,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "B760"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MDFiZTMxZj.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MDFiZTMxZj_1.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 252999,
+        "minimum_order": 10,
+        "bulk_discount": false
+      },
+      "multi_sede": {
+        "san_jose": 8,
+        "heredia": 18,
+        "cartago": 15,
+        "liberia": 18
+      },
+      "features": [
+        "WiFi 6E integrado",
+        "PCIe 5.0",
+        "BIOS Flashback"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0037",
+      "id": "prod-0037",
+      "name": "ASRock B650M-HDV/M.2",
+      "description": "ASRock B650M-HDV/M.2 de la categoría Tarjetas Madre. Combina rendimiento confiable con un precio competitivo.",
+      "price": 312999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASRock",
+      "model": "B650M-HDV/M.2",
+      "sku": "ASR-B650M-HDV-M-2-0037",
+      "stock": 19,
+      "rating": 4.2,
+      "reviews": 134,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "192GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/ZDM0ZmI1Zj.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/ZDM0ZmI1Zj_1.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 274999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 4,
+        "heredia": 6,
+        "cartago": 3,
+        "liberia": 6
+      },
+      "features": [
+        "WiFi 6E integrado",
+        "RGB Header",
+        "PCIe 5.0"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0038",
+      "id": "prod-0038",
+      "name": "ASUS TUF Gaming B650-Plus",
+      "description": "ASUS TUF Gaming B650-Plus de la categoría Tarjetas Madre. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 367999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "ASUS",
+      "model": "TUF Gaming B650-Plus",
+      "sku": "ASU-TUF-GAMING-B650-PLUS-0038",
+      "stock": 34,
+      "rating": 3.6,
+      "reviews": 250,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "AM5"
+        },
+        {
+          "label": "Chipset",
+          "value": "B650"
+        },
+        {
+          "label": "Formato",
+          "value": "Mini-ITX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "128GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/NTU2NTdjOW.jpg",
+        "https://cdn.pacifiko.com/image/cache/catalog/p/NTU2NTdjOW_5-1000x1000.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 323999,
+        "minimum_order": 10,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 0,
+        "heredia": 5,
+        "cartago": 14,
+        "liberia": 15
+      },
+      "features": [
+        "PCIe 5.0",
+        "RGB Header",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0039",
+      "id": "prod-0039",
+      "name": "Gigabyte Z790 AORUS Elite AX",
+      "description": "Gigabyte Z790 AORUS Elite AX de la categoría Tarjetas Madre. Ofrece un balance entre rendimiento y durabilidad.",
+      "price": 237999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "Gigabyte",
+      "model": "Z790 AORUS Elite AX",
+      "sku": "GIG-Z790-AORUS-ELITE-AX-0039",
+      "stock": 21,
+      "rating": 3.7,
+      "reviews": 335,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "Micro-ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "2"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "4"
+        }
+      ],
+      "images": [
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MGQ4YzVkMG.jpg",
+        "https://img.pacifiko.com/PROD/resize/1/1000x1000/MGQ4YzVkMG_1.jpg"
+      ],
+      "b2b_info": {
+        "wholesale_price": 208999,
+        "minimum_order": 3,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 3,
+        "heredia": 3,
+        "cartago": 0,
+        "liberia": 15
+      },
+      "features": [
+        "BIOS Flashback",
+        "PCIe 5.0",
+        "WiFi 6E integrado"
+      ],
+      "warranty": "36 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    },
+    {
+      "objectID": "prod-0040",
+      "id": "prod-0040",
+      "name": "MSI MPG Z790 Carbon WiFi",
+      "description": "MSI MPG Z790 Carbon WiFi de la categoría Tarjetas Madre. Ideal para profesionales y entusiastas de la tecnología.",
+      "price": 294999,
+      "currency": "CRC",
+      "category": "Tarjetas Madre",
+      "brand": "MSI",
+      "model": "MPG Z790 Carbon WiFi",
+      "sku": "MSI-MPG-Z790-CARBON-WIFI-0040",
+      "stock": 55,
+      "rating": 4.2,
+      "reviews": 110,
+      "specifications": [
+        {
+          "label": "Socket",
+          "value": "LGA1700"
+        },
+        {
+          "label": "Chipset",
+          "value": "Z790"
+        },
+        {
+          "label": "Formato",
+          "value": "ATX"
+        },
+        {
+          "label": "Ranuras RAM",
+          "value": "4"
+        },
+        {
+          "label": "Memoria máxima soportada",
+          "value": "64GB"
+        },
+        {
+          "label": "Puertos M.2",
+          "value": "2"
+        }
+      ],
+      "images": [
+        "https://storage-asset.msi.com/global/picture/product/product_167869173124aa2ef905beedae3bf8f55d739b5d8c.webp",
+        "https://storage-asset.msi.com/global/picture/product/product_16786917318dee1592f1e090e01f9e1bd282857899.webp"
+      ],
+      "b2b_info": {
+        "wholesale_price": 259999,
+        "minimum_order": 5,
+        "bulk_discount": true
+      },
+      "multi_sede": {
+        "san_jose": 18,
+        "heredia": 10,
+        "cartago": 17,
+        "liberia": 10
+      },
+      "features": [
+        "RGB Header",
+        "M.2 x4",
+        "BIOS Flashback"
+      ],
+      "warranty": "24 meses",
+      "status": "available",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-07T10:00:00Z"
+    }
+  ]
+}
