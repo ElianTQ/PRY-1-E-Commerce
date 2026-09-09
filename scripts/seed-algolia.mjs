@@ -53,7 +53,7 @@ try {
   console.log(` ${result.objectIDs.length} productos indexados`);
 
   await index.setSettings({
-    attributesForFaceting: ['category', 'brand', 'b2c', 'b2b', 'multiSede'],
+    attributesForFaceting: ['category', 'brand', 'price', 'b2c', 'b2b', 'multiSede'],
     searchableAttributes: ['name', 'description', 'brand', 'category'],
     ranking: ['desc(rating)', 'typo', 'geo', 'words', 'filters', 'proximity']
   });

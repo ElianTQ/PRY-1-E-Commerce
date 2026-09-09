@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { searchClient, indexName } from '../config/algolia';
+import { searchClient, indexName } from '../../config/algolia';
 
 export default function ProductDetail() {
   const { id } = useParams();
