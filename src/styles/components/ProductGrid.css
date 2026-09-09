@@ -1,0 +1,31 @@
+/* Zona 3: productos, a la derecha, nunca invadida por los filtros */
+.products-section {
+  flex: 1;
+  min-width: 0; /* evita que el grid empuje o se meta debajo del sidebar */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text, #888);
+}
+
+.empty-sub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text, #aaa);
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .products-section {
+    width: 100%;
+  }
+}
