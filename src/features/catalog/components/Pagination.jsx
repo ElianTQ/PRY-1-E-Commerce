@@ -9,7 +9,6 @@ const Pagination = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const location = useLocation();
   
-  // 🔥 SOLO usar sessionStorage para guardar la página, NO para controlar inicialización
   const [isInitialized, setIsInitialized] = useState(false);
   
   const isUpdatingFromUrl = useRef(false);
@@ -29,47 +28,36 @@ const Pagination = () => {
     return algoliaPage + 1;
   };
 
-  // 🔥 CORREGIDO: Restaurar desde URL en cada refresh
   useEffect(() => {
-    // Si ya se inicializó o no hay páginas, salir
     if (initialLoadDone.current) return;
     if (nbPages === 0) {
-      console.log('⏳ Esperando que nbPages cargue...');
       return;
     }
     
     const pageParam = searchParams.get('page');
-    console.log('🔄 Inicializando desde URL, pageParam:', pageParam, 'nbPages:', nbPages);
     
     let targetPage = 0;
     let shouldUpdateUrl = false;
     
     if (pageParam) {
       const algoliaPage = urlPageToAlgoliaPage(pageParam);
-      console.log('🔄 PageParam convertido a Algolia page:', algoliaPage);
       
       if (algoliaPage !== null && algoliaPage >= 0 && algoliaPage < nbPages) {
         targetPage = algoliaPage;
-        console.log('✅ Página válida, restaurando a:', targetPage);
       } else {
-        console.log('⚠️ Página inválida en URL, usando primera página');
         shouldUpdateUrl = true;
       }
     } else {
-      // 🔥 Si no hay página en URL, intentar restaurar desde sessionStorage
       const savedPage = sessionStorage.getItem('last_pagination_page');
       if (savedPage) {
         const savedPageNum = parseInt(savedPage, 10);
         if (!isNaN(savedPageNum) && savedPageNum >= 0 && savedPageNum < nbPages) {
           targetPage = savedPageNum;
-          console.log('📌 Restaurando desde sessionStorage:', targetPage);
-          // Actualizar URL con la página guardada
           shouldUpdateUrl = true;
         }
       }
     }
     
-    // Actualizar URL si es necesario
     if (shouldUpdateUrl) {
       const newParams = new URLSearchParams(searchParams);
       if (targetPage > 0) {
@@ -80,22 +68,17 @@ const Pagination = () => {
       setSearchParams(newParams, { replace: true });
     }
     
-    // Restaurar la página
-    console.log('🔄 Restaurando a página Algolia:', targetPage);
     isUpdatingFromUrl.current = true;
     refine(targetPage);
     
-    // Marcar como inicializado
     setTimeout(() => {
       isUpdatingFromUrl.current = false;
       initialLoadDone.current = true;
       setIsInitialized(true);
-      console.log('✅ Inicialización completada, página:', targetPage);
     }, 300);
     
   }, [nbPages, searchParams, refine, setSearchParams]);
 
-  // Sincronizar Algolia -> URL
   useEffect(() => {
     if (isUpdatingFromUrl.current) return;
     if (!isInitialized) return;
@@ -105,7 +88,6 @@ const Pagination = () => {
     lastRefinement.current = currentRefinement;
     
     const urlPage = algoliaPageToUrlPage(currentRefinement);
-    console.log('📝 Actualizando URL a página (1-based):', urlPage);
     
     const newParams = new URLSearchParams(searchParams);
     if (currentRefinement > 0) {
@@ -126,32 +108,25 @@ const Pagination = () => {
     }
   }, [currentRefinement, searchParams, setSearchParams, isInitialized]);
 
-  // Manejar cambios en URL (botón atrás/adelante)
   useEffect(() => {
     if (!isInitialized) return;
     if (isUpdatingFromAlgolia.current) return;
     if (isUpdatingFromUrl.current) return;
     if (isUserAction.current) {
-      console.log('⏭️ Ignorando cambio de URL durante acción del usuario');
       return;
     }
     
     const pageParam = searchParams.get('page');
     
     if (!pageParam) {
-      console.log('ℹ️ No hay parámetro page en URL, manteniendo página actual');
       return;
     }
     
     const targetAlgoliaPage = urlPageToAlgoliaPage(pageParam);
-    console.log('🔙 PageParam convertido a Algolia page:', targetAlgoliaPage);
     
     if (targetAlgoliaPage === null || targetAlgoliaPage < 0 || targetAlgoliaPage >= nbPages) {
-      console.log('⚠️ Página inválida en URL:', pageParam);
       return;
     }
-    
-    console.log('🔙 Cambio detectado en URL a página (Algolia):', targetAlgoliaPage, 'Actual (Algolia):', currentRefinement);
     
     if (targetAlgoliaPage !== currentRefinement && nbPages > 0) {
       isUpdatingFromUrl.current = true;
@@ -162,11 +137,9 @@ const Pagination = () => {
     }
   }, [searchParams, currentRefinement, nbPages, refine, isInitialized]);
 
-  // 🔥 Guardar la página actual en sessionStorage
   useEffect(() => {
     if (isInitialized) {
       sessionStorage.setItem('last_pagination_page', currentRefinement.toString());
-      console.log('💾 Guardando página en sessionStorage:', currentRefinement);
     }
   }, [currentRefinement, isInitialized]);
 
@@ -174,10 +147,8 @@ const Pagination = () => {
 
   const handleRefine = (page) => {
     if (isNaN(page) || page < 0 || page >= nbPages) {
-      console.log('❌ Página inválida:', page);
       return;
     }
-    console.log('👆 Click en página (Algolia):', page);
     isUpdatingFromUrl.current = false;
     isUserAction.current = true;
     refine(page);
@@ -189,12 +160,10 @@ const Pagination = () => {
 
   const goToFirstPage = () => {
     if (!isFirstPage) {
-      console.log('👆 Click en Primera página');
       isUpdatingFromUrl.current = false;
       isUpdatingFromAlgolia.current = false;
       isUserAction.current = true;
       
-      // Limpiar URL
       const newParams = new URLSearchParams(searchParams);
       newParams.delete('page');
       setSearchParams(newParams, { replace: true });
@@ -209,7 +178,6 @@ const Pagination = () => {
 
   const goToLastPage = () => {
     if (!isLastPage) {
-      console.log('👆 Click en Última página');
       isUpdatingFromUrl.current = false;
       isUpdatingFromAlgolia.current = false;
       isUserAction.current = true;
@@ -235,7 +203,6 @@ const Pagination = () => {
       <button
         disabled={isFirstPage}
         onClick={() => {
-          console.log('👆 Click en página anterior');
           isUpdatingFromUrl.current = false;
           isUserAction.current = true;
           refine(currentRefinement - 1);
@@ -262,7 +229,6 @@ const Pagination = () => {
       <button
         disabled={isLastPage}
         onClick={() => {
-          console.log('👆 Click en página siguiente');
           isUpdatingFromUrl.current = false;
           isUserAction.current = true;
           refine(currentRefinement + 1);

@@ -101,7 +101,7 @@ export default function ProductDetail() {
   const currentImage = images[selectedImageIndex] || null;
 
   return (
-    <div className="main-content">
+    <div className="product-detail-page">
       <button className="back-button" onClick={handleBack}>
         ← Volver al catálogo
       </button>
