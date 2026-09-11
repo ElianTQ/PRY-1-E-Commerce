@@ -14,13 +14,25 @@
   transform: translateY(-2px);
 }
 
-/* Todas las fotos con el mismo tamaño (cuadradas), aunque el original no lo sea */
-.product-card img,
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+
 .product-card .no-image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text, #aaa);
+  font-size: 13px;
   background: var(--code-bg, #f4f3ec);
 }
 
