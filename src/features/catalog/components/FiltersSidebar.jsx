@@ -1,4 +1,3 @@
-// src/features/catalog/components/FiltersSidebar.jsx
 import CategoryFilter from './CategoryFilter';
 import PriceSlider from './PriceSlider';
 
