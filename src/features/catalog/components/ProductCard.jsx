@@ -1,6 +1,15 @@
+/**
+ * Tarjeta individual de producto en el grid del catálogo.
+ *
+ * Recibe un `hit` de Algolia con los datos del producto.
+ * Al hacer clic navega al detalle, pasando como query param la
+ * página actual del catálogo para poder restaurarla al volver.
+ */
+
 import { useNavigate } from 'react-router-dom';
 import { useInstantSearch } from 'react-instantsearch';
 
+// Formatea un número como colón costarricense sin decimales.
 const formatCRC = (value) =>
   new Intl.NumberFormat('es-CR', {
     style: 'currency',
@@ -8,6 +17,8 @@ const formatCRC = (value) =>
     maximumFractionDigits: 0,
   }).format(value ?? 0);
 
+// Algunos productos traen `categories` (array) y otros `category` (string).
+// Normaliza ambos casos a un texto para mostrar.
 const getCategoryLabel = (hit) => {
   if (Array.isArray(hit.categories) && hit.categories.length > 0) {
     return hit.categories.join(', ');
@@ -20,7 +31,8 @@ const ProductCard = ({ hit }) => {
   const { uiState } = useInstantSearch();
 
   const handleProductClick = () => {
-    // Pasar la página actual como parámetro en la URL
+    // Guarda la página actual del catálogo en la URL del detalle para
+    // poder restaurarla cuando el usuario vuelva atrás.
     const currentPage = uiState?.['grupo-06_products']?.page || 0;
     navigate(`/producto/${hit.id}?page=${currentPage}`);
   };
@@ -28,6 +40,7 @@ const ProductCard = ({ hit }) => {
   return (
     <div className="product-card" onClick={handleProductClick} style={{ cursor: 'pointer' }}>
       {hit.images?.[0] ? (
+        // loading="lazy" difiere la carga hasta que la imagen entra al viewport.
         <img src={hit.images[0]} alt={hit.name} loading="lazy" />
       ) : (
         <div className="no-image">Sin imagen</div>

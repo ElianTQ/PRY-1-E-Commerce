@@ -1,8 +1,11 @@
-/* Slider de precio (filtro "Precio") */
+/* ===== Slider de precio (filtro "Precio") ===== */
+
 .price-slider-container {
   padding: 8px 4px;
 }
 
+/* Contenedor de la barra y los dos thumbs. position: relative para
+   poder posicionar los hijos de forma absoluta. */
 .price-slider {
   position: relative;
   height: 36px;
@@ -10,6 +13,7 @@
   align-items: center;
 }
 
+/* Barra gris de fondo */
 .price-track-bg {
   position: absolute;
   left: 0;
@@ -19,6 +23,7 @@
   border-radius: 2px;
 }
 
+/* Barra morada entre los dos thumbs (se posiciona con left/right en JS) */
 .price-track {
   position: absolute;
   height: 4px;
@@ -26,6 +31,8 @@
   border-radius: 2px;
 }
 
+/* Los <input type="range"> se estiran sobre la barra. pointer-events: none
+   permite que el clic pase a la barra; solo el thumb los recibe (auto). */
 .price-thumb {
   position: absolute;
   width: 100%;
@@ -36,9 +43,10 @@
   margin: 0;
 }
 
+/* Thumb en WebKit (Chrome, Safari, Edge) */
 .price-thumb::-webkit-slider-thumb {
   -webkit-appearance: none;
-  pointer-events: auto;
+  pointer-events: auto; /* solo el círculo recibe el clic */
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -48,6 +56,7 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Thumb en Firefox (necesita su propio pseudo-elemento) */
 .price-thumb::-moz-range-thumb {
   pointer-events: auto;
   width: 16px;
@@ -59,6 +68,7 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Etiquetas con los valores mínimo y máximo, en los extremos */
 .price-values {
   display: flex;
   justify-content: space-between;
@@ -67,6 +77,7 @@
   margin-top: 14px;
 }
 
+/* Cada valor es una "pastilla" con borde */
 .price-min,
 .price-max {
   padding: 6px 14px;
@@ -76,9 +87,10 @@
   font-weight: 500;
   color: var(--text-h, #333);
   background: var(--bg, #fff);
-  white-space: nowrap;
+  white-space: nowrap; /* evita que el precio se parta en dos líneas */
 }
 
+/* Respeta la preferencia del usuario de reducir animaciones */
 @media (prefers-reduced-motion: reduce) {
   .price-thumb {
     transition: none;

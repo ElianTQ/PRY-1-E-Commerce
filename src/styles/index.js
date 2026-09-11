@@ -1,6 +1,14 @@
-/* Importar todos los estilos de la aplicación */
+/**
+ * Punto único de importación de estilos.
+ *
+ * Se importa una sola vez desde App.jsx y desde ahí quedan disponibles
+ * todas las clases CSS del proyecto, sin necesidad de importar cada
+ * archivo .css en su componente correspondiente.
+ *
+ * Nota: los estilos globales (index.css) se importan aparte en main.jsx.
+ */
 
-/* Estilos globales y variables (index.css debe importarse desde main.jsx o aquí) */
+/* Layout general del catálogo */
 import './catalog.css';
 import './components/Header.css';
 

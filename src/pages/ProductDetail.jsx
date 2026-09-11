@@ -1,9 +1,21 @@
+/**
+ * Página de detalle de un producto.
+ *
+ * Carga el producto en dos pasos:
+ *   1. Consulta Algolia por objectID (fuente principal).
+ *   2. Si no existe en Algolia o falla la conexión, busca en el
+ *      archivo local data/products.json como respaldo.
+ *
+ * Lee el id desde la URL (/producto/:id) y, al volver al catálogo,
+ * conserva el ?page=N que ProductCard añadió para restaurar la página.
+ */
 
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { searchClient, indexName } from '../config/algolia';
 import productsData from '../../data/products.json';
 
+// Formatea un número como colón costarricense sin decimales.
 const formatCRC = (value) =>
   new Intl.NumberFormat('es-CR', {
     style: 'currency',
@@ -26,6 +38,7 @@ export default function ProductDetail() {
       setError(null);
 
       try {
+        // Búsqueda directa por objectID en Algolia.
         const index = searchClient.initIndex(indexName);
         const response = await index.search('', {
           filters: `objectID:"${id}"`,
@@ -36,16 +49,20 @@ export default function ProductDetail() {
           setProduct(response.hits[0]);
           setSelectedImageIndex(0);
         } else {
+          // No está en el índice: buscar en el JSON local.
           loadProductFromLocal(id);
         }
       } catch (err) {
         console.error('Error fetching from Algolia:', err);
+        // Si Algolia falla, intentar con el respaldo local.
         loadProductFromLocal(id);
       } finally {
         setLoading(false);
       }
     };
 
+    // Respaldo: busca el producto en data/products.json.
+    // Acepta el JSON como { products: [...] } o como array directo.
     const loadProductFromLocal = (productId) => {
       try {
         const products = productsData.products || productsData;
@@ -68,6 +85,7 @@ export default function ProductDetail() {
     }
   }, [id]);
 
+  // Vuelve al catálogo conservando el ?page si venía en la URL.
   const handleBack = () => {
     const params = new URLSearchParams(location.search);
     const page = params.get('page');
@@ -106,7 +124,7 @@ export default function ProductDetail() {
         ← Volver al catálogo
       </button>
 
-      {/* Detalle del producto */}
+      {/* Bloque principal: galería a la izquierda, info a la derecha */}
       <div className="product-detail-container">
         <div className="product-gallery">
           {currentImage ? (
@@ -117,6 +135,7 @@ export default function ProductDetail() {
             <div className="no-image-large">Sin imagen</div>
           )}
 
+          {/* Miniaturas: solo si hay más de una imagen */}
           {images.length > 1 && (
             <div className="thumbnail-gallery">
               {images.map((img, idx) => (
@@ -191,7 +210,7 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Especificaciones técnicas */}
+      {/* Tabla de especificaciones técnicas */}
       {product.specifications && product.specifications.length > 0 && (
         <div className="specifications-section">
           <h2>Especificaciones técnicas</h2>
@@ -206,7 +225,7 @@ export default function ProductDetail() {
         </div>
       )}
 
-      {/* Información adicional */}
+      {/* Tarjetas: garantía, sedes y B2B */}
       <div className="additional-info-section-modern">
         {product.warranty && (
           <div className="info-card-modern">
@@ -221,6 +240,7 @@ export default function ProductDetail() {
             <ul className="sedes-list-modern">
               {Object.entries(product.multi_sede).map(([sede, qty]) => (
                 <li key={sede} className={qty === 0 ? 'sede-agotada' : ''}>
+                  {/* Capitaliza el nombre de la sede */}
                   <span className="sede-name">
                     {sede.charAt(0).toUpperCase() + sede.slice(1)}
                   </span>

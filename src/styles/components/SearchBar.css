@@ -1,10 +1,13 @@
-/* Zona 1: buscador, arriba y centrado */
+/* ===== Buscador (arriba y centrado) ===== */
+
 .search-section {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centra el contenido horizontalmente */
   padding: 40px 40px 28px;
 }
 
+/* Contenedor del input. width 100% + max-width permite que se encoja
+   en móvil sin pasar de 560px en desktop. */
 .search-wrapper {
   width: 100%;
   max-width: 560px;
@@ -13,15 +16,19 @@
 .search-input {
   width: 100%;
   padding: 14px 24px;
+
+  /* 16px es el mínimo para que iOS no haga zoom automático al enfocar */
   font-size: 16px;
+
   border: 1.5px solid var(--border, #ddd);
-  border-radius: 999px;
+  border-radius: 999px; /* forma de pastilla */
   outline: none;
   background: var(--bg, #fff);
   color: var(--text-h, #333);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
+/* Al enfocar: borde morado + halo suave alrededor */
 .search-input:focus {
   border-color: var(--accent, #5b2eff);
   box-shadow: 0 0 0 4px var(--accent-bg, rgba(91, 46, 255, 0.12));
@@ -38,8 +45,8 @@
 
 /* Espacio reservado para el título (podés escribir el texto directo en el h1) */
 .catalog-title {
-  align-self: stretch;
-  min-height: 1.2em;
+  align-self: stretch; /* ocupa el ancho del padre, para que text-align funcione */
+  min-height: 1.2em;   /* reserva altura aunque el título esté vacío */
   margin: 0 0 20px;
   font-size: 32px;
   font-weight: 600;
@@ -47,12 +54,15 @@
   color: var(--text-h, #1a1a2e);
 }
 
+/* ===== Responsive ===== */
+
 @media (max-width: 1024px) {
   .catalog-title {
     font-size: 26px;
   }
 }
 
+/* Respeta la preferencia del usuario de reducir animaciones */
 @media (prefers-reduced-motion: reduce) {
   .search-input {
     transition: none;
@@ -61,6 +71,7 @@
 
 @media (max-width: 480px) {
   .search-input {
+    /* Padding reducido pero font-size se mantiene en 16px (iOS) */
     padding: 12px 18px;
     font-size: 16px;
   }
