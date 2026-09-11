@@ -58,3 +58,10 @@
     transition: none;
   }
 }
+
+@media (max-width: 480px) {
+  .search-input {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}

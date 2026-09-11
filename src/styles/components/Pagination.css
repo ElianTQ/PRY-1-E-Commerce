@@ -48,3 +48,17 @@
     transition: none;
   }
 }
+
+@media (max-width: 480px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 28px;
+  }
+
+  .pagination button {
+    min-width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+}
