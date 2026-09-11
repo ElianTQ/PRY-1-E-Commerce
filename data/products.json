@@ -15915,7 +15915,7 @@
         },
         {
           "label": "Estándar WiFi",
-          "value": "WiFi 5"
+          "value": "WiFi 6"
         },
         {
           "label": "Puertos LAN",
@@ -15961,7 +15961,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "Deco X20",
-      "sku": "TP--DECO-X20-0264",
+      "sku": "TP-LINK-DECO-X20-0264",
       "stock": 29,
       "rating": 5,
       "reviews": 188,
@@ -15972,7 +15972,7 @@
         },
         {
           "label": "Estándar WiFi",
-          "value": "WiFi 5"
+          "value": "WiFi 6"
         },
         {
           "label": "Puertos LAN",
@@ -16018,7 +16018,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "Archer AX55",
-      "sku": "TP--ARCHER-AX55-0265",
+      "sku": "TP-LINK-ARCHER-AX55-0265",
       "stock": 33,
       "rating": 3.7,
       "reviews": 77,
@@ -16029,7 +16029,7 @@
         },
         {
           "label": "Estándar WiFi",
-          "value": "WiFi 5"
+          "value": "WiFi 6"
         },
         {
           "label": "Puertos LAN",
@@ -16143,7 +16143,7 @@
         },
         {
           "label": "Estándar WiFi",
-          "value": "WiFi 5"
+          "value": "WiFi 6"
         },
         {
           "label": "Puertos LAN",
@@ -16417,7 +16417,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "Archer C6",
-      "sku": "TP--ARCHER-C6-0272",
+      "sku": "TP-LINK-ARCHER-C6-0272",
       "stock": 36,
       "rating": 4.3,
       "reviews": 205,
@@ -16474,7 +16474,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "Archer C80",
-      "sku": "TP--ARCHER-C80-0273",
+      "sku": "TP-LINK-ARCHER-C80-0273",
       "stock": 9,
       "rating": 3.8,
       "reviews": 274,
@@ -16645,7 +16645,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "TL-SG105",
-      "sku": "TP--TL-SG105-0276",
+      "sku": "TP-LINK-TL-SG105-0276",
       "stock": 28,
       "rating": 4.9,
       "reviews": 217,
@@ -16702,7 +16702,7 @@
       "category": "Redes",
       "brand": "TP-Link",
       "model": "Archer AX73",
-      "sku": "TP--ARCHER-AX73-0277",
+      "sku": "TP-LINK-ARCHER-AX73-0277",
       "stock": 33,
       "rating": 4.1,
       "reviews": 149,
