@@ -1,7 +1,8 @@
+
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { searchClient, indexName } from '../../config/algolia';
-import productsData from '../../../data/products.json';
+import { searchClient, indexName } from '../config/algolia';
+import productsData from '../../data/products.json';
 
 const formatCRC = (value) =>
   new Intl.NumberFormat('es-CR', {
@@ -23,25 +24,22 @@ export default function ProductDetail() {
     const fetchProduct = async () => {
       setLoading(true);
       setError(null);
-      
+
       try {
-        // Intentar primero con Algolia
         const index = searchClient.initIndex(indexName);
         const response = await index.search('', {
           filters: `objectID:"${id}"`,
-          hitsPerPage: 1
+          hitsPerPage: 1,
         });
 
         if (response.hits.length > 0) {
           setProduct(response.hits[0]);
           setSelectedImageIndex(0);
         } else {
-          // Fallback a datos locales
           loadProductFromLocal(id);
         }
-      } catch (error) {
-        console.error('Error fetching from Algolia:', error);
-        // Fallback a datos locales
+      } catch (err) {
+        console.error('Error fetching from Algolia:', err);
         loadProductFromLocal(id);
       } finally {
         setLoading(false);
@@ -51,8 +49,8 @@ export default function ProductDetail() {
     const loadProductFromLocal = (productId) => {
       try {
         const products = productsData.products || productsData;
-        const found = products.find(p => p.id === productId);
-        
+        const found = products.find((p) => p.id === productId);
+
         if (found) {
           setProduct(found);
           setSelectedImageIndex(0);
@@ -104,10 +102,12 @@ export default function ProductDetail() {
 
   return (
     <div className="main-content">
-      <button className="back-button" onClick={handleBack}>← Volver al catálogo</button>
-      
+      <button className="back-button" onClick={handleBack}>
+        ← Volver al catálogo
+      </button>
+
+      {/* Detalle del producto */}
       <div className="product-detail-container">
-        {/* Galería de imágenes */}
         <div className="product-gallery">
           {currentImage ? (
             <div className="main-image-container">
@@ -116,7 +116,7 @@ export default function ProductDetail() {
           ) : (
             <div className="no-image-large">Sin imagen</div>
           )}
-          
+
           {images.length > 1 && (
             <div className="thumbnail-gallery">
               {images.map((img, idx) => (
@@ -132,7 +132,6 @@ export default function ProductDetail() {
           )}
         </div>
 
-        {/* Información del producto */}
         <div className="product-info-section">
           <div className="product-header">
             <h1 className="product-name">{product.name}</h1>
@@ -140,7 +139,6 @@ export default function ProductDetail() {
             {product.model && <p className="product-model">Modelo: {product.model}</p>}
           </div>
 
-          {/* Precio y disponibilidad */}
           <div className="price-section">
             <p className="product-price">{formatCRC(product.price)}</p>
             <div className="availability">
@@ -150,22 +148,21 @@ export default function ProductDetail() {
             </div>
           </div>
 
-          {/* Rating */}
           {product.rating && (
             <div className="rating-section">
               <span className="rating-stars">★ {product.rating.toFixed(1)}</span>
-              {product.reviews && <span className="review-count">({product.reviews} reseñas)</span>}
+              {product.reviews && (
+                <span className="review-count">({product.reviews} reseñas)</span>
+              )}
             </div>
           )}
 
-          {/* Descripción */}
           {product.description && (
             <div className="description-section">
               <p className="product-description">{product.description}</p>
             </div>
           )}
 
-          {/* Información categoría */}
           <div className="info-grid">
             {product.category && (
               <div className="info-item">
@@ -181,7 +178,6 @@ export default function ProductDetail() {
             )}
           </div>
 
-          {/* Características */}
           {product.features && product.features.length > 0 && (
             <div className="features-section">
               <h3>Características principales</h3>
@@ -199,9 +195,9 @@ export default function ProductDetail() {
       {product.specifications && product.specifications.length > 0 && (
         <div className="specifications-section">
           <h2>Especificaciones técnicas</h2>
-          <div className="specifications-grid">
+          <div className="specifications-table">
             {product.specifications.map((spec, idx) => (
-              <div key={idx} className="spec-item">
+              <div key={idx} className="spec-row">
                 <span className="spec-label">{spec.label}</span>
                 <span className="spec-value">{spec.value}</span>
               </div>
@@ -211,31 +207,49 @@ export default function ProductDetail() {
       )}
 
       {/* Información adicional */}
-      <div className="additional-info-section">
+      <div className="additional-info-section-modern">
         {product.warranty && (
-          <div className="info-box">
+          <div className="info-card-modern">
             <h3>Garantía</h3>
-            <p>{product.warranty}</p>
+            <p className="info-card-content">{product.warranty}</p>
           </div>
         )}
-        
-        {product.multi_sede && (
-          <div className="info-box">
+
+        {product.multi_sede && Object.keys(product.multi_sede).length > 0 && (
+          <div className="info-card-modern">
             <h3>Disponibilidad en sedes</h3>
-            <ul>
+            <ul className="sedes-list-modern">
               {Object.entries(product.multi_sede).map(([sede, qty]) => (
-                <li key={sede}>{sede.charAt(0).toUpperCase() + sede.slice(1)}: {qty} unidades</li>
+                <li key={sede} className={qty === 0 ? 'sede-agotada' : ''}>
+                  <span className="sede-name">
+                    {sede.charAt(0).toUpperCase() + sede.slice(1)}
+                  </span>
+                  {qty > 0 ? (
+                    <span className="sede-qty">{qty} unidades</span>
+                  ) : (
+                    <span className="sede-qty-out">Agotado</span>
+                  )}
+                </li>
               ))}
             </ul>
           </div>
         )}
-        
+
         {product.b2b_info && (
-          <div className="info-box">
+          <div className="info-card-modern">
             <h3>Información B2B</h3>
-            <p>Precio mayorista: {formatCRC(product.b2b_info.wholesale_price)}</p>
-            <p>Pedido mínimo: {product.b2b_info.minimum_order} unidades</p>
-            {product.b2b_info.bulk_discount && <p>✓ Descuentos por volumen disponibles</p>}
+            <div className="b2b-content">
+              <p>
+                <strong>Precio mayorista:</strong>{' '}
+                {formatCRC(product.b2b_info.wholesale_price)}
+              </p>
+              <p>
+                <strong>Pedido mínimo:</strong> {product.b2b_info.minimum_order} unidades
+              </p>
+              {product.b2b_info.bulk_discount && (
+                <p className="b2b-badge">✓ Descuentos por volumen disponibles</p>
+              )}
+            </div>
           </div>
         )}
       </div>
