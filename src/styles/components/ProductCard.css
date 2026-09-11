@@ -24,7 +24,6 @@
   background: #ffffff;
 }
 
-
 .product-card .no-image {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -80,5 +79,11 @@
 @media (prefers-reduced-motion: reduce) {
   .product-card {
     transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-info h3 {
+    min-height: auto;
   }
 }
