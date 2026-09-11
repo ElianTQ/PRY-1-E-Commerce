@@ -73,11 +73,42 @@
   .filters-sidebar {
     width: 100%;
     position: static;
-    max-height: none;
-    overflow: visible;
-    padding: 16px;
+    padding: 12px 14px;
     border: 1px solid var(--border, #e5e4e7);
     border-radius: 10px;
     background: var(--code-bg, #f9f9fb);
+  }
+
+  .filters-sidebar h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .filter-group {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+
+  .filter-group h4 {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .category-list li {
+    margin-bottom: 6px;
+  }
+
+  .category-list label {
+    font-size: 13px;
+    gap: 7px;
+  }
+
+  .category-list input[type='checkbox'] {
+    width: 14px;
+    height: 14px;
+  }
+
+  .category-list .count {
+    font-size: 11px;
   }
 }
