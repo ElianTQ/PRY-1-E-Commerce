@@ -1,0 +1,86 @@
+/* Slider de precio (filtro "Precio") */
+.price-slider-container {
+  padding: 8px 4px;
+}
+
+.price-slider {
+  position: relative;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.price-track-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--border, #e2e2e2);
+  border-radius: 2px;
+}
+
+.price-track {
+  position: absolute;
+  height: 4px;
+  background: var(--accent, #5b2eff);
+  border-radius: 2px;
+}
+
+.price-thumb {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  margin: 0;
+}
+
+.price-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent, #5b2eff);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.price-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent, #5b2eff);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.price-min,
+.price-max {
+  padding: 6px 14px;
+  border: 1.5px solid var(--border, #e5e4e7);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-h, #333);
+  background: var(--bg, #fff);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .price-thumb {
+    transition: none;
+  }
+}

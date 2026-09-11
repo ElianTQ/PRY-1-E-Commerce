@@ -11,14 +11,14 @@ const __dirname = dirname(__filename);
 
 const appId = process.env.VITE_ALGOLIA_APP_ID;
 const apiKey = process.env.VITE_ALGOLIA_API_KEY;
-const indexName = process.env.VITE_ALGOLIA_INDEX_NAME || 'grupo-01_products';
+const indexName = process.env.VITE_ALGOLIA_INDEX_NAME || 'grupo-06_products';
 
 if (!appId || !apiKey) {
   console.error(' Error: Faltan variables de entorno');
   console.log('Crea un archivo .env con:');
   console.log('VITE_ALGOLIA_APP_ID=tu_app_id');
   console.log('VITE_ALGOLIA_API_KEY=tu_api_key');
-  console.log('VITE_ALGOLIA_INDEX_NAME=grupo-01_products');
+  console.log('VITE_ALGOLIA_INDEX_NAME=grupo-06_products');
   process.exit(1);
 }
 
@@ -43,19 +43,28 @@ try {
 
   console.log(` ${products.length} productos encontrados`);
 
-  const transformedProducts = products.map(product => ({
-    objectID: product.id,
-    ...product
-  }));
+
+  const transformedProducts = products.map(product => {
+    const sedes_disponibles = Object.entries(product.multi_sede || {})
+    .filter(([, stock]) => stock > 0)
+    .map(([sede]) => sede);
+    return {
+      ...product,
+      objectID: product.id,
+      sedes_disponibles,
+    };
+  });
+
 
   console.log(' Indexando productos...');
   const result = await index.saveObjects(transformedProducts);
   console.log(` ${result.objectIDs.length} productos indexados`);
 
   await index.setSettings({
-    attributesForFaceting: ['category', 'brand', 'price', 'b2c', 'b2b', 'multiSede'],
-    searchableAttributes: ['name', 'description', 'brand', 'category'],
-    ranking: ['desc(rating)', 'typo', 'geo', 'words', 'filters', 'proximity']
+    attributesForFaceting: ['category', 'brand', 'price', 'b2b_info.bulk_discount', 'sedes_disponibles'],
+    searchableAttributes: ['name', 'model', 'description', 'brand', 'category'],
+    customRanking: ['desc(rating)', 'desc(reviews)'],
+
   });
 
   console.log(' Configuración de Algolia actualizada');
@@ -65,3 +74,4 @@ try {
   console.error(' Error durante la indexación:', error.message);
   process.exit(1);
 }
+

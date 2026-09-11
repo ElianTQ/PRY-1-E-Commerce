@@ -1,4 +1,4 @@
-import "./App.css";  // ← agrega esta línea, faltaba
+import "./styles/index.js";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import CatalogPage from "./features/catalog/CatalogPage";
 import ProductDetail from "./features/pages/ProductDetail.jsx";
@@ -8,7 +8,7 @@ export default function App() {
     <HashRouter>
       <div className="App">
         <header className="App-header">
-          <h1>Catalogo de Productos</h1>
+          <h1>Catálogo de Productos</h1>
         </header>
         <Routes>
           <Route path="/" element={<CatalogPage />} />
