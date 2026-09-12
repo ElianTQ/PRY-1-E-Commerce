@@ -1,12 +1,13 @@
-/* filtros, a la izquierda, ancho fijo */
+/* ===== Filtros: columna izquierda, ancho fijo (desktop) ===== */
+
 .filters-sidebar {
-  flex: 0 0 230px;
+  flex: 0 0 230px;          /* ancho fijo, no crece ni se encoge */
   width: 230px;
-  align-self: flex-start;
-  position: sticky;
+  align-self: flex-start;   /* no estirar a la altura del contenedor flex */
+  position: sticky;         /* se queda pegado mientras se hace scroll */
   top: 24px;
-  max-height: calc(100vh - 48px);
-  overflow-y: auto;
+  max-height: calc(100vh - 48px); /* 48px = 24 arriba + 24 abajo */
+  overflow-y: auto;         /* scroll interno si hay muchos filtros */
 }
 
 .filters-sidebar h3 {
@@ -16,12 +17,14 @@
   margin-bottom: 22px;
 }
 
+/* Cada grupo (Precio, Marca, Categoría) con separador inferior */
 .filter-group {
   padding-bottom: 22px;
   margin-bottom: 22px;
   border-bottom: 1px solid var(--border, #e5e4e7);
 }
 
+/* El último grupo no lleva separador ni espacio extra */
 .filter-group:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -59,9 +62,10 @@
   width: 15px;
   height: 15px;
   cursor: pointer;
-  flex-shrink: 0;
+  flex-shrink: 0; /* no se encoge si el label es largo */
 }
 
+/* Contador de resultados a la derecha del label */
 .category-list .count {
   margin-left: auto;
   color: var(--text, #999);
@@ -69,16 +73,21 @@
   font-size: 12px;
 }
 
+/* ===== Móvil: filtros como tarjeta con scroll interno ===== */
+
 @media (max-width: 900px) {
   .filters-sidebar {
     width: 100%;
-    position: static;
-    padding: 12px 14px;
+    position: relative;
+    max-height: 340px; /* limita la altura para no empujar el grid */
+    overflow-y: auto;
+    padding: 12px 14px 28px;
     border: 1px solid var(--border, #e5e4e7);
     border-radius: 10px;
     background: var(--code-bg, #f9f9fb);
   }
 
+  /* Todos los tamaños se reducen para que quepan más filtros visibles */
   .filters-sidebar h3 {
     font-size: 15px;
     margin-bottom: 12px;
@@ -110,5 +119,43 @@
 
   .category-list .count {
     font-size: 11px;
+  }
+}
+
+/* ===== Aviso "Desliza para ver más filtros" ===== */
+
+/* Oculto por defecto: solo se muestra en móvil cuando hay overflow */
+.filters-scroll-hint {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .filters-scroll-hint {
+    display: block;
+    position: sticky;  /* se queda pegado al fondo mientras hay scroll */
+    bottom: -15px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text, #888);
+    margin: 0;
+    padding: 10px 0 0px;
+    letter-spacing: 0.3px;
+
+    /* Degradado que difumina los filtros que quedan debajo */
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--code-bg, #f9f9fb) 80%
+    );
+    pointer-events: none; /* no intercepta clics */
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  /* Solo visible cuando el componente detecta que hay más contenido debajo
+     (la clase .has-more la añade FiltersSidebar.jsx vía JS) */
+  .filters-sidebar.has-more .filters-scroll-hint {
+    opacity: 0.85;
   }
 }
