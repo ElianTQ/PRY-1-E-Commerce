@@ -1,0 +1,136 @@
+/* ===== Header ===== */
+
+.App-header {
+  position: relative; /* contiene los ::before y ::after decorativos */
+  background-color: #0a0a0f;
+
+  /* Dos capas: un halo morado arriba al centro + degradado vertical oscuro */
+  background-image:
+    radial-gradient(ellipse 70% 120% at 50% 0%, rgba(91, 46, 255, 0.22) 0%, transparent 70%),
+    linear-gradient(180deg, #14142a 0%, #0a0a0f 100%);
+
+  padding: 40px 64px 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+
+  /* Línea inferior con degradado morado que se difumina en los bordes */
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, transparent 0%, #5b2eff 50%, transparent 100%) 1;
+
+  /* Sombra exterior morada + luz interior sutil arriba */
+  box-shadow:
+    0 8px 32px rgba(91, 46, 255, 0.28),
+    0 1px 0 rgba(255, 255, 255, 0.06) inset;
+
+  overflow: hidden; /* recorta los ::before que se salen */
+}
+
+/* Halo morado difuso detrás del contenido */
+.App-header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%); /* centra horizontalmente */
+  width: 800px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(91, 46, 255, 0.20) 0%, transparent 70%);
+  pointer-events: none; /* no intercepta clics */
+  filter: blur(50px);
+}
+
+/* Línea de luz superior sutil */
+.App-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.20), transparent);
+  pointer-events: none;
+}
+
+.App-header h1 {
+  position: relative; /* se pinta por encima de los ::before/::after */
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+  padding: 4px 0 6px;
+
+  /* Doble halo morado alrededor del texto */
+  text-shadow:
+    0 0 30px rgba(91, 46, 255, 0.45),
+    0 0 60px rgba(91, 46, 255, 0.20);
+}
+
+.App-subtitle {
+  position: relative;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+/* Punto morado brillante antes del subtítulo */
+.App-subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5b2eff;
+  box-shadow: 0 0 10px rgba(91, 46, 255, 0.9);
+  margin-right: 10px;
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1024px) {
+  /* Reduce el padding lateral para tablets */
+  .App-header {
+    padding: 36px 32px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    padding: 36px 24px 28px;
+    gap: 8px;
+  }
+
+  .App-header h1 {
+    font-size: 26px;
+    letter-spacing: -0.4px;
+  }
+
+  .App-subtitle {
+    font-size: 13px;
+  }
+
+  /* Halo decorativo más pequeño para no desbordar en móvil */
+  .App-header::before {
+    width: 500px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Ajuste fino para móviles estrechos */
+  .App-header h1 {
+    font-size: 22px;
+  }
+  .App-subtitle {
+    font-size: 12px;
+  }
+}

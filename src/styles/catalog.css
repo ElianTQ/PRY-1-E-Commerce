@@ -1,0 +1,41 @@
+/* ===== Layout general del catálogo ===== */
+
+/* Contenedor de dos columnas: filtros a la izquierda, productos a la derecha.
+   align-items: flex-start hace que cada columna mantenga su altura natural
+   (necesario para que el sidebar pueda ser sticky). */
+.results-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 8px 40px 56px;
+  max-width: 1400px; /* ancho máximo del contenido en pantallas grandes */
+  margin: 0 auto;    /* centra el bloque horizontalmente */
+  width: 100%;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet y móvil: las columnas pasan a apilarse verticalmente */
+@media (max-width: 900px) {
+  .results-section {
+    flex-direction: column;
+    gap: 28px;
+    padding: 8px 12px 40px;
+  }
+
+  .search-section {
+    padding: 28px 20px 20px;
+  }
+}
+
+/* Móviles estrechos: menos padding lateral para ganar espacio útil */
+@media (max-width: 480px) {
+  .search-section {
+    padding: 20px 16px 16px;
+  }
+
+  .results-section {
+    padding: 8px 10px 32px;
+    gap: 20px;
+  }
+}
